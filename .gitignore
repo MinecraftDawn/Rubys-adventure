@@ -7,3 +7,6 @@ Logs/
 
 # Unity user settings
 UserSettings/
+
+# IDE
+.idea/
