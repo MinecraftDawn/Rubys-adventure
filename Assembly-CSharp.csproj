@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\RubyController.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Tiles" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Audio" />
      <Folder Include="Assets\Settings" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Animations" />
