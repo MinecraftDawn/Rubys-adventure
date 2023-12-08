@@ -61,6 +61,7 @@
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Animations\AnimationClips" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\VFX" />
+     <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\Environmnent\Materials" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\UI" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\Characters" />
