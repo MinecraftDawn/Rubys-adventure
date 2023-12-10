@@ -54,6 +54,7 @@
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Animations\AnimationClips\Player" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Demo" />
      <Folder Include="Assets\Script" />
+     <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Settings\Scenes" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\Environmnent" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites" />
