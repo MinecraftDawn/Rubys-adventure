@@ -48,6 +48,7 @@
      <Compile Include="Assets\Script\HealthCollectible.cs" />
      <Compile Include="Assets\Script\RubyController.cs" />
      <Compile Include="Assets\Script\DamageZone.cs" />
+     <Compile Include="Assets\Script\EnemyController.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Tiles" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Audio" />
@@ -58,6 +59,7 @@
      <Folder Include="Assets\Script" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Settings\Scenes" />
+     <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\Materials" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites\Environmnent" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Art\Sprites" />
      <Folder Include="Assets\2DBeginnerTutorialResources" />
