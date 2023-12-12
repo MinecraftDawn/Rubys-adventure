@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\HealthCollectible.cs" />
      <Compile Include="Assets\Script\RubyController.cs" />
+     <Compile Include="Assets\Script\DamageZone.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Tiles" />
      <Folder Include="Assets\2DBeginnerTutorialResources\Audio" />
