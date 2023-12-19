@@ -15,6 +15,8 @@ public class RubyController : MonoBehaviour {
     bool isInvincible;
     float invincibleTimer;
     public float timeInvincible = 2.0f;
+    private Animator animator;
+    private Vector2 lookDirection = new Vector2(1, 0);
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class RubyController : MonoBehaviour {
         // Application.targetFrameRate = 10;
         
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,15 @@ public class RubyController : MonoBehaviour {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         
+        Vector2 move = new Vector2(horizontal, vertical);
+        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f)) {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
+            
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
@@ -44,8 +56,9 @@ public class RubyController : MonoBehaviour {
         // Debug.Log(horizontal + " " + vertical);
         Vector2 position = transform.position;
         position.x += speed * horizontal * Time.deltaTime;
-        position.y += speed * vertical * Time.deltaTime; 
-        
+        position.y += speed * vertical * Time.deltaTime;
+
+
         _rigidbody2D.MovePosition(position);
     }
     
