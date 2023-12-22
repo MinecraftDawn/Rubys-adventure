@@ -2964,6 +2964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
+    - target: {fileID: 1381680366020437375, guid: fcd1b4ddfcf15784d97654808e3a8a46, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6600936134191782841, guid: fcd1b4ddfcf15784d97654808e3a8a46, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
