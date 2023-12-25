@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public float speed = 3f;
     public bool vertical;
@@ -12,6 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
     float timer;
     int direction = 1;
     private Animator animator;
+
+    private bool broken = true;
     
     // Start is called before the first frame update
     void Start()
@@ -30,10 +32,15 @@ public class NewBehaviourScript : MonoBehaviour
             direction = -direction;
             timer = changeTime;
         }
+        
     }
     
     void FixedUpdate()
     {
+        if (!broken) {
+            return;
+        }
+        
         Vector2 position = rigidbody2D.position;
         
         if (vertical)
@@ -60,5 +67,11 @@ public class NewBehaviourScript : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+    }
+    
+    public void Fix()
+    {
+        broken = false;
+        rigidbody2D.simulated = false;
     }
 }

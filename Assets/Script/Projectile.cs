@@ -20,8 +20,15 @@ public class Projectile : MonoBehaviour {
         rigidbody2d.AddForce(direction * force);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("Projectile hit" + other.gameObject.ToString());
+    void OnCollisionEnter2D(Collision2D other) {
+        
+        EnemyController enemy = other.collider.GetComponent<EnemyController>();
+        if (enemy != null)
+        {
+            enemy.Fix();
+        }
+    
         Destroy(gameObject);
+        
     }
 }
