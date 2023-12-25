@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        
+        if(transform.position.magnitude > 1000) Destroy(this.gameObject);
     }
 
     public void Launch(Vector2 direction, float force) {
