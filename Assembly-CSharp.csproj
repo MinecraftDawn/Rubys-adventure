@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\HealthCollectible.cs" />
      <Compile Include="Assets\Script\RubyController.cs" />
+     <Compile Include="Assets\Script\UIHealthBarController.cs" />
      <Compile Include="Assets\Script\DamageZone.cs" />
      <Compile Include="Assets\Script\EnemyController.cs" />
      <Compile Include="Assets\Script\Projectile.cs" />
