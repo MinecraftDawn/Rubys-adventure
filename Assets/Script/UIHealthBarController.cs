@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIHealthBarController : MonoBehaviour {
+    public static UIHealthBarController instance { get; private set; }
+    
     public Image mask;
 
+    
     private float originalSize;
     // Start is called before the first frame update
+    
+    void Awake()
+    {
+        instance = this;
+    }
+    
     void Start() {
         originalSize = mask.rectTransform.rect.width;
     }

@@ -20,7 +20,7 @@ public class RubyController : MonoBehaviour {
 
     public GameObject projectilePrefab;
 
-    public UIHealthBarController healthBar;
+    // public UIHealthBarController healthBar;
     
     // Start is called before the first frame update
     void Start()
@@ -94,6 +94,6 @@ public class RubyController : MonoBehaviour {
         
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
-        healthBar.SetValue(((float)currentHealth)/maxHealth);
+        UIHealthBarController.instance.SetValue(((float)currentHealth)/maxHealth);
     }
 }
