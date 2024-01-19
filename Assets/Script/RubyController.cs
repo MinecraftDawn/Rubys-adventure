@@ -17,6 +17,8 @@ public class RubyController : MonoBehaviour {
     public float timeInvincible = 2.0f;
     private Animator animator;
     private Vector2 lookDirection = new Vector2(1, 0);
+    
+    AudioSource audioSource;
 
     public GameObject projectilePrefab;
 
@@ -31,6 +33,8 @@ public class RubyController : MonoBehaviour {
         
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+        
+        audioSource= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -72,6 +76,11 @@ public class RubyController : MonoBehaviour {
                 }  
             }
         }
+    }
+    
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     private void FixedUpdate() {
